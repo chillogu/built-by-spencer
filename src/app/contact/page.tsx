@@ -14,10 +14,10 @@ export default function Contact() {
                 pressure, no obligation — just a conversation about what you need.
               </p>
 
-              <form action="https://formsubmit.co/me@protectedwithspencer.com" method="POST" className="space-y-5">
-                <input type="hidden" name="_subject" value="New quote request from protectedwithspencer.com" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_template" value="table" />
+              <form action="https://api.web3forms.com/submit" method="POST" className="space-y-5">
+                <input type="hidden" name="access_key" value="43b462cb-8c33-4780-98b7-9d813615bb4c" />
+                <input type="hidden" name="subject" value="New quote request from protectedwithspencer.com" />
+                <input type="checkbox" name="botcheck" className="hidden" />
                 <div>
                   <label htmlFor="name" className="block text-white/30 text-xs uppercase tracking-wider mb-2">
                     Name
@@ -54,7 +54,7 @@ export default function Contact() {
                       name="phone"
                       id="phone"
                       className="w-full bg-navy-900 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-white/20 transition-colors text-sm"
-                      placeholder="(555) 123-4567"
+                      placeholder="(914) 454-1515"
                     />
                   </div>
                 </div>
@@ -85,11 +85,11 @@ export default function Contact() {
                 <div className="space-y-5">
                   <div>
                     <p className="text-white/20 text-xs uppercase tracking-wider mb-1">Phone</p>
-                    <p className="text-white/60 text-sm">(555) 123-4567</p>
+                    <p className="text-white/60 text-sm">(914) 454-1515</p>
                   </div>
                   <div>
                     <p className="text-white/20 text-xs uppercase tracking-wider mb-1">Email</p>
-                    <p className="text-white/60 text-sm">spencer@example.com</p>
+                    <p className="text-white/60 text-sm">me@protectedwithspencer.com</p>
                   </div>
                   <div>
                     <p className="text-white/20 text-xs uppercase tracking-wider mb-1">Service area</p>

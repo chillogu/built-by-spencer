@@ -28,8 +28,9 @@ export default function Hero() {
             </h1>
 
             <p className="text-white/40 text-base sm:text-lg max-w-md mb-10 leading-relaxed">
-              I shop 20+ carriers to find you the right coverage at the right
-              price. No pressure. No nonsense. Just honest advice.
+              I'm Spencer Hanson. I help people understand their options, compare
+              carriers, and get the right coverage — without the pressure or the
+              runaround.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-3">
@@ -37,7 +38,7 @@ export default function Hero() {
                 href="/contact"
                 className="bg-white text-navy-950 font-medium px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
               >
-                Get a Quote
+                Talk with Spencer
               </Link>
               <Link
                 href="/about"

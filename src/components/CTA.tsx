@@ -3,9 +3,11 @@ import Link from "next/link";
 export default function CTA({
   title = "Let's figure this out together.",
   description = "Free quote. No obligation. Takes about 5 minutes.",
+  buttonText = "Get a Quote",
 }: {
   title?: string;
   description?: string;
+  buttonText?: string;
 }) {
   return (
     <section className="border-t border-white/5">
@@ -17,7 +19,7 @@ export default function CTA({
             href="/contact"
             className="inline-block bg-white text-navy-950 font-medium px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
           >
-            Get a Quote
+            {buttonText}
           </Link>
         </div>
       </div>

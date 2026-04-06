@@ -35,7 +35,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Spencer Hanson. All rights reserved.
           </p>
           <p className="text-white/20 text-xs">
-            Working alongside Solace Financial
+            (914) 454-1515 · me@protectedwithspencer.com
           </p>
         </div>
       </div>
