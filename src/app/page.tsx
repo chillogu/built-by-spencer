@@ -11,17 +11,17 @@ export default function Home() {
           <div className="max-w-2xl">
             <p className="text-gold-500 text-xs uppercase tracking-wider mb-4">Here's the truth</p>
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 tracking-tight leading-snug">
-              Most people are either overpaying for life insurance or they don't have enough. Either way, they're losing.
+              Most people are either overpaying for life insurance or haven't found affordable options. Either way, they're losing.
             </h2>
             <div className="space-y-4 text-white/50 leading-relaxed">
               <p>
-                They buy the first policy they're quoted. They don't compare. They don't ask questions. And then they find out later they could've gotten twice the coverage for the same price — or they find out their family isn't actually protected when it matters.
+                Most people buy the first policy they're quoted, don't compare, and don't ask questions. Later, they learn they could have received twice the coverage for the same price, or discover their family isn't protected when it truly matters.
               </p>
               <p>
-                That's where I come in. I'm an independent broker. I don't work for an insurance company — I work for you. I compare 20+ carriers, I look at your actual situation, and I put together the right coverage at the right price. Not what one company wants to sell you. What's actually best for you.
+                That's where I come in. As an independent broker, I work for you—not an insurance company. By comparing more than 20 carriers and assessing your needs, I assemble the right coverage at the right price. My aim: offer what's actually best for you, not just what one company wants to sell.
               </p>
               <p>
-                Simple as that.
+                It really is that straightforward. Let me walk you through how I make the process easy and effective for you.
               </p>
             </div>
           </div>
@@ -30,30 +30,26 @@ export default function Home() {
 
       <section className="border-t border-white/5">
         <div className="max-w-6xl mx-auto px-5 sm:px-6 py-20">
-          <p className="text-gold-500 text-xs uppercase tracking-wider mb-4">How I help</p>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-12 tracking-tight">
-            Three steps. That's it.
-          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 rounded-xl overflow-hidden">
             <div className="bg-navy-950 p-8">
               <div className="text-gold-500 text-4xl font-bold mb-4">01</div>
               <h3 className="text-white font-semibold text-lg mb-2">We talk</h3>
               <p className="text-white/40 text-sm leading-relaxed">
-                A quick conversation. I'll ask the right questions, understand your situation, and figure out what you actually need — not what looks good on paper.
+                In a quick conversation, I ask the right questions, understand your situation, and determine what you truly need—not just what looks good on paper.
               </p>
             </div>
             <div className="bg-navy-950 p-8">
               <div className="text-gold-500 text-4xl font-bold mb-4">02</div>
               <h3 className="text-white font-semibold text-lg mb-2">I do the work</h3>
               <p className="text-white/40 text-sm leading-relaxed">
-                I shop 20+ carriers, compare rates, and put together options that fit your goals, your health, and your budget. You don't lift a finger.
+                I shop 20+ carriers, compare rates, and present tailored options that align with your goals, health, and budget—often uncovering policies you wouldn't find on your own. You get better choices without lifting a finger.
               </p>
             </div>
             <div className="bg-navy-950 p-8">
               <div className="text-gold-500 text-4xl font-bold mb-4">03</div>
               <h3 className="text-white font-semibold text-lg mb-2">You decide</h3>
               <p className="text-white/40 text-sm leading-relaxed">
-                I lay out your options clearly — the good, the bad, the tradeoffs. No pressure. No confusion. You make the call with full confidence.
+                I lay out your options clearly—the good, the bad, and the trade-offs—so you understand exactly what each policy means for you. With no pressure or confusion, you make confident decisions knowing the options truly fit your needs.
               </p>
             </div>
           </div>
