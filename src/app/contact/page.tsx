@@ -14,14 +14,19 @@ export default function Contact() {
                 pressure, no obligation — just a conversation about what you need.
               </p>
 
-              <form className="space-y-5">
+              <form action="https://formsubmit.co/me@protectedwithspencer.com" method="POST" className="space-y-5">
+                <input type="hidden" name="_subject" value="New quote request from protectedwithspencer.com" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
                 <div>
                   <label htmlFor="name" className="block text-white/30 text-xs uppercase tracking-wider mb-2">
                     Name
                   </label>
                   <input
                     type="text"
+                    name="name"
                     id="name"
+                    required
                     className="w-full bg-navy-900 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-white/20 transition-colors text-sm"
                     placeholder="Your name"
                   />
@@ -33,7 +38,9 @@ export default function Contact() {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       id="email"
+                      required
                       className="w-full bg-navy-900 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-white/20 transition-colors text-sm"
                       placeholder="you@email.com"
                     />
@@ -44,6 +51,7 @@ export default function Contact() {
                     </label>
                     <input
                       type="tel"
+                      name="phone"
                       id="phone"
                       className="w-full bg-navy-900 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-white/20 transition-colors text-sm"
                       placeholder="(555) 123-4567"
@@ -55,6 +63,7 @@ export default function Contact() {
                     What are you looking for?
                   </label>
                   <textarea
+                    name="message"
                     id="message"
                     rows={4}
                     className="w-full bg-navy-900 border border-white/5 rounded-lg px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-white/20 transition-colors resize-none text-sm"
