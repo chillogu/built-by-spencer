@@ -96,6 +96,16 @@ export default function Contact() {
                     <p className="text-white/60 text-sm">All 50 states</p>
                   </div>
                 </div>
+                <div className="mt-6 pt-6 border-t border-white/5">
+                  <a
+                    href="https://calendar.notion.so/meet/spencerhanson/insurance"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-white text-navy-950 font-medium px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm text-center w-full"
+                  >
+                    Schedule a Call
+                  </a>
+                </div>
               </div>
 
               <div className="bg-navy-900 border border-white/5 rounded-xl p-8">
