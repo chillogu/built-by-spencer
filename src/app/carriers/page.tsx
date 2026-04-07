@@ -1,18 +1,11 @@
 import CTA from "@/components/CTA";
 
 const carriers = [
-  { name: "Mutual of Omaha", note: "Term & whole life", url: "https://www.mutualofomaha.com/" },
-  { name: "Transamerica", note: "Flexible coverage", url: "https://www.transamerica.com/" },
-  { name: "AIG", note: "Competitive rates", url: "https://www.aig.com/" },
-  { name: "Corebridge Financial", note: "Formerly AIG Life", url: "https://www.corebridgefinancial.com/" },
-  { name: "Foresters Financial", note: "Member benefits", url: "https://www.foresters.com/" },
-  { name: "Nationwide", note: "Comprehensive solutions", url: "https://www.nationwide.com/" },
-  { name: "Americo", note: "Final expense specialist", url: "https://www.americo.com/" },
-  { name: "Globe Life", note: "Family coverage", url: "https://www.globeontheweb.com/" },
-  { name: "Columbus Life", note: "Innovative products", url: "https://www.columbuslife.com/" },
-  { name: "Pacific Life", note: "Financial strength", url: "https://www.pacificlife.com/" },
-  { name: "Banner Life", note: "Affordable term", url: "https://www.bannerlife.com/" },
-  { name: "Prudential", note: "Industry leader", url: "https://www.prudential.com/" },
+  { name: "Americo", note: "Life insurance & final expense", url: "https://americo.com/" },
+  { name: "Corebridge Financial", note: "Life insurance & retirement", url: "https://corebridgefinancial.com/" },
+  { name: "American Amicable", note: "Life & health insurance", url: "https://www.americanamicable.com/" },
+  { name: "Aetna", note: "Health & life insurance", url: "https://www.aetna.com/" },
+  { name: "Mutual of Omaha", note: "Life insurance & Medicare", url: "https://mutualofomaha.com/" },
 ];
 
 export default function Carriers() {
