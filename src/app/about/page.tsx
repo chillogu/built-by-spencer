@@ -71,6 +71,10 @@ export default function About() {
                     <p className="text-white/20 text-xs uppercase tracking-wider mb-1">Carriers</p>
                     <p className="text-white/60 text-sm">20+ top-rated companies</p>
                   </div>
+                  <div>
+                    <p className="text-white/20 text-xs uppercase tracking-wider mb-1">NPN</p>
+                    <p className="text-white/60 text-sm">22179707</p>
+                  </div>
                 </div>
               </div>
             </div>
