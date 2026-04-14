@@ -1,15 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-950: #030812;
-  --color-navy-900: #0a1628;
-  --color-navy-800: #111d33;
-  --color-navy-700: #1a2d4a;
-  --color-navy-600: #253f65;
-  --color-gold-500: #c9a84c;
-  --color-gold-400: #d4b966;
-  --color-gold-300: #e0cc85;
-  --color-gold-600: #b08f35;
+  --color-cream-50: #fdfbf5;
+  --color-cream-100: #f5f1e8;
+  --color-cream-200: #ece6d3;
+  --color-charcoal-950: #1a1c1f;
+  --color-charcoal-900: #32373c;
+  --color-charcoal-800: #4a4f54;
+  --color-charcoal-700: #5a6066;
+  --color-charcoal-500: #8a8f95;
+  --color-tan-300: #e0d7bc;
+  --color-tan-400: #d4c8a5;
+  --color-tan-500: #ccc29f;
+  --color-tan-600: #a89a70;
+  --color-tan-700: #817757;
+
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: var(--font-archivo), var(--font-inter), sans-serif;
 }
 
 @layer base {
@@ -17,11 +24,12 @@
     scroll-behavior: smooth;
   }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.025em;
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
   }
 }

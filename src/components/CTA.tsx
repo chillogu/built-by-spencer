@@ -10,14 +10,14 @@ export default function CTA({
   buttonText?: string;
 }) {
   return (
-    <section className="border-t border-white/5">
+    <section className="bg-charcoal-900">
       <div className="max-w-6xl mx-auto px-5 sm:px-6 py-20">
         <div className="max-w-lg">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3 tracking-tight">{title}</h2>
-          <p className="text-white/40 mb-8">{description}</p>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 tracking-tight text-cream-100">{title}</h2>
+          <p className="text-cream-100/60 mb-8">{description}</p>
           <Link
             href="/contact"
-            className="inline-block bg-white text-navy-950 font-medium px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-sm"
+            className="inline-block bg-tan-500 text-charcoal-900 font-semibold px-6 py-3 hover:bg-cream-100 transition-colors text-sm uppercase tracking-wider"
           >
             {buttonText}
           </Link>

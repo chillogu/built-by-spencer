@@ -3,32 +3,33 @@ import CTA from "@/components/CTA";
 export default function About() {
   return (
     <main className="pt-16">
-      <section className="border-t border-white/5">
+      <section className="border-t border-charcoal-900/10 bg-cream-50">
         <div className="max-w-6xl mx-auto px-5 sm:px-6 py-20">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
             <div className="lg:col-span-2">
               <div className="sticky top-24">
                 <div className="relative">
+                  <div className="absolute -inset-3 bg-tan-500/30" />
                   <img
                     src="/images/headshot.jpeg"
                     alt="Spencer Hanson"
-                    className="w-full aspect-square object-cover rounded-xl ring-1 ring-white/10"
+                    className="relative w-full aspect-square object-cover ring-1 ring-charcoal-900/10"
                   />
                 </div>
-                <div className="mt-6 flex items-center gap-3">
-                  <div className="w-2 h-2 bg-gold-500 rounded-full" />
-                  <p className="text-white/40 text-sm">Currently accepting new clients</p>
+                <div className="mt-8 flex items-center gap-3">
+                  <div className="w-2 h-2 bg-tan-600" />
+                  <p className="text-charcoal-700 text-sm uppercase tracking-wider font-semibold">Currently accepting new clients</p>
                 </div>
               </div>
             </div>
 
             <div className="lg:col-span-3">
-              <p className="text-gold-500 text-xs uppercase tracking-wider mb-4">About</p>
-              <h1 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight">
+              <p className="text-tan-700 text-xs uppercase tracking-[0.2em] font-semibold mb-4">About</p>
+              <h1 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight text-charcoal-900">
                 Spencer Hanson
               </h1>
 
-              <div className="space-y-5 text-white/50 leading-relaxed">
+              <div className="space-y-5 text-charcoal-700 leading-relaxed">
                 <p>
                   I got into life insurance because I kept seeing people get sold
                   policies they didn't need at prices they shouldn't pay. There's
@@ -52,28 +53,28 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="mt-10 pt-8 border-t border-white/5">
-                <h3 className="text-white font-medium text-sm mb-6">The basics</h3>
+              <div className="mt-10 pt-8 border-t border-charcoal-900/10">
+                <h3 className="text-charcoal-900 font-semibold text-sm mb-6 uppercase tracking-wider">The basics</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <p className="text-white/20 text-xs uppercase tracking-wider mb-1">Role</p>
-                    <p className="text-white/60 text-sm">Independent Life Insurance Broker</p>
+                    <p className="text-tan-700 text-xs uppercase tracking-wider font-semibold mb-1">Role</p>
+                    <p className="text-charcoal-900 text-sm">Independent Life Insurance Broker</p>
                   </div>
                   <div>
-                    <p className="text-white/20 text-xs uppercase tracking-wider mb-1">Team</p>
-                    <p className="text-white/60 text-sm">Solace Financial</p>
+                    <p className="text-tan-700 text-xs uppercase tracking-wider font-semibold mb-1">Team</p>
+                    <p className="text-charcoal-900 text-sm">Solace Financial</p>
                   </div>
                   <div>
-                    <p className="text-white/20 text-xs uppercase tracking-wider mb-1">Coverage</p>
-                    <p className="text-white/60 text-sm">All 50 states</p>
+                    <p className="text-tan-700 text-xs uppercase tracking-wider font-semibold mb-1">Coverage</p>
+                    <p className="text-charcoal-900 text-sm">All 50 states</p>
                   </div>
                   <div>
-                    <p className="text-white/20 text-xs uppercase tracking-wider mb-1">Carriers</p>
-                    <p className="text-white/60 text-sm">20+ top-rated companies</p>
+                    <p className="text-tan-700 text-xs uppercase tracking-wider font-semibold mb-1">Carriers</p>
+                    <p className="text-charcoal-900 text-sm">20+ top-rated companies</p>
                   </div>
                   <div>
-                    <p className="text-white/20 text-xs uppercase tracking-wider mb-1">National Producer Number</p>
-                    <p className="text-white/60 text-sm">22179707</p>
+                    <p className="text-tan-700 text-xs uppercase tracking-wider font-semibold mb-1">National Producer Number</p>
+                    <p className="text-charcoal-900 text-sm">22179707</p>
                   </div>
                 </div>
               </div>

@@ -11,41 +11,41 @@ const carriers = [
 export default function Carriers() {
   return (
     <main className="pt-16">
-      <section className="border-t border-white/5">
+      <section className="border-t border-charcoal-900/10 bg-cream-50">
         <div className="max-w-6xl mx-auto px-5 sm:px-6 py-20">
-          <p className="text-gold-500 text-xs uppercase tracking-wider mb-4">Partners</p>
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight">
+          <p className="text-tan-700 text-xs uppercase tracking-[0.2em] font-semibold mb-4">Partners</p>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 tracking-tight text-charcoal-900">
             Carriers I work with
           </h1>
-          <p className="text-white/40 max-w-lg mb-12 leading-relaxed">
+          <p className="text-charcoal-700 max-w-lg mb-12 leading-relaxed">
             I partner with financially strong, well-rated carriers to give you
             real options — not just one company's product.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 rounded-xl overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-charcoal-900/10">
             {carriers.map((carrier) => (
               <a
                 key={carrier.name}
                 href={carrier.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-navy-950 p-6 flex items-center justify-between group hover:bg-navy-900 transition-colors"
+                className="bg-cream-100 p-6 flex items-center justify-between group hover:bg-cream-50 transition-colors"
               >
                 <div>
-                  <h3 className="text-white font-medium text-sm mb-0.5">{carrier.name}</h3>
-                  <p className="text-white/30 text-xs">{carrier.note}</p>
+                  <h3 className="text-charcoal-900 font-semibold text-sm mb-0.5">{carrier.name}</h3>
+                  <p className="text-charcoal-700 text-xs">{carrier.note}</p>
                 </div>
-                <svg className="w-4 h-4 text-white/10 group-hover:text-gold-500/50 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-charcoal-900/20 group-hover:text-tan-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
             ))}
           </div>
 
-          <div className="mt-12 p-6 bg-navy-900 border border-white/5 rounded-xl">
-            <p className="text-white/60 text-sm">
+          <div className="mt-12 p-6 bg-cream-100 border border-charcoal-900/10">
+            <p className="text-charcoal-700 text-sm">
               These are just a few of the carriers I have access to. New partnerships are added regularly —{" "}
-              <a href="/contact" className="text-gold-500 hover:text-gold-400 underline underline-offset-2">
+              <a href="/contact" className="text-tan-700 hover:text-charcoal-900 underline underline-offset-2 font-semibold">
                 reach out
               </a>{" "}
               and I'll find the right carrier for your specific needs.
