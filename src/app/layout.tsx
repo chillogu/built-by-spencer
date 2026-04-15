@@ -20,6 +20,20 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   title: "Spencer Hanson | Independent Life Insurance Broker",
   description: "Independent life insurance broker working alongside Solace Financial. Serving clients nationwide with personalized coverage and the best rates from top carriers.",
+  openGraph: {
+    title: "Spencer Hanson | Independent Life Insurance Broker",
+    description: "Independent life insurance broker working alongside Solace Financial. Serving clients nationwide with personalized coverage and the best rates from top carriers.",
+    url: "https://protectedwithspencer.com", // Assuming this is the root URL
+    siteName: "Protected With Spencer",
+    images: ["/business_card.jpeg"], // Use path relative to public directory
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Spencer Hanson | Independent Life Insurance Broker",
+    description: "Independent life insurance broker working alongside Solace Financial. Serving clients nationwide with personalized coverage and the best rates from top carriers.",
+    images: ["/business_card.jpeg"],
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${archivo.variable}`}>
-      <body className="bg-cream-100 text-charcoal-900 antialiased">
+      <body className="bg-charcoal-950 text-cream-100 antialiased">
         <Navbar />
         {children}
         <Footer />
