@@ -63,24 +63,17 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Full-width photo */}
-      <div className="relative z-10">
-        <div className="relative overflow-hidden">
+      {/* Headshot card */}
+      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 pb-0">
+        <div className="flex items-center gap-5 bg-white border border-ink-200 rounded-xl px-6 py-4 shadow-sm w-fit mx-auto">
           <img
             src="/images/headshot.jpeg"
-            alt="Spencer Hanson — Independent Insurance Broker"
-            className="w-full h-56 sm:h-72 object-cover object-[50%_30%]"
+            alt="Spencer Hanson"
+            className="w-14 h-14 rounded-lg object-cover object-top"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 flex items-end justify-between">
-            <div>
-              <div className="text-white font-bold text-xl sm:text-2xl tracking-tight">Spencer Hanson</div>
-              <div className="text-brand-200 text-sm mt-0.5">Independent Insurance Broker · Solace Financial</div>
-            </div>
-            <div className="hidden sm:block text-right">
-              <div className="text-brand-200 text-[10px] uppercase tracking-widest font-semibold">NPN</div>
-              <div className="text-white font-mono text-sm font-semibold">22179707</div>
-            </div>
+          <div>
+            <div className="text-ink-900 font-semibold text-base tracking-tight">Spencer Hanson</div>
+            <div className="text-ink-500 text-sm">Independent Insurance Broker · Solace Financial</div>
           </div>
         </div>
       </div>
