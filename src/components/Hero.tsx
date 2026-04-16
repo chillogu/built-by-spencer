@@ -69,7 +69,7 @@ export default function Hero() {
           <img
             src="/images/headshot.jpeg"
             alt="Spencer Hanson — Independent Insurance Broker"
-            className="w-full h-64 sm:h-80 lg:h-96 object-cover object-top"
+            className="w-full h-64 sm:h-80 lg:h-96 object-cover object-[center_15%]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 flex items-end justify-between">
