@@ -7,9 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
           <div className="md:col-span-5">
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 bg-brand-600 rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-sm tracking-tight">S</span>
-              </div>
+              <img src="/images/headshot.jpeg" alt="Spencer Hanson" className="w-9 h-9 rounded-md object-cover object-top" />
               <div>
                 <span className="text-white font-semibold text-sm block">
                   Spencer Hanson

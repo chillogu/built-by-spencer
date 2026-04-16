@@ -17,9 +17,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 bg-brand-900 rounded-md flex items-center justify-center">
-              <span className="text-white font-bold text-sm tracking-tight">S</span>
-            </div>
+            <img src="/images/headshot.jpeg" alt="Spencer Hanson" className="w-8 h-8 rounded-md object-cover object-top" />
             <div className="leading-tight">
               <span className="text-ink-900 font-semibold text-sm tracking-tight block">
                 Spencer Hanson
