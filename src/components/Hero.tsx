@@ -64,12 +64,12 @@ export default function Hero() {
       </div>
 
       {/* Full-width photo */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 pb-0">
-        <div className="relative rounded-2xl overflow-hidden border border-ink-100 shadow-2xl shadow-ink-900/10">
+      <div className="relative z-10">
+        <div className="relative overflow-hidden">
           <img
             src="/images/headshot.jpeg"
             alt="Spencer Hanson — Independent Insurance Broker"
-            className="w-full h-64 sm:h-80 lg:h-96 object-cover object-[center_15%]"
+            className="w-full h-56 sm:h-72 object-cover object-[50%_30%]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 flex items-end justify-between">
