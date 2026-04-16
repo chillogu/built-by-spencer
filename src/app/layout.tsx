@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -8,30 +8,35 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-});
-
-const archivo = Archivo({
-  subsets: ["latin"],
-  variable: "--font-archivo",
   weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://protectedwithspencer.com"),
   title: "Spencer Hanson | Independent Life Insurance Broker",
-  description: "Independent life insurance broker working alongside Solace Financial. Serving clients nationwide with personalized coverage and the best rates from top carriers.",
+  description:
+    "Independent life insurance broker licensed in New York, Texas, and Ohio. I compare top carriers and match you with the right coverage — no pressure, no runaround.",
   openGraph: {
     title: "Spencer Hanson | Independent Life Insurance Broker",
-    description: "Independent life insurance broker working alongside Solace Financial. Serving clients nationwide with personalized coverage and the best rates from top carriers.",
-    url: "https://protectedwithspencer.com", // Assuming this is the root URL
+    description:
+      "Independent life insurance broker licensed in New York, Texas, and Ohio. Compare top carriers and get the right coverage.",
+    url: "https://protectedwithspencer.com",
     siteName: "Protected With Spencer",
-    images: ["/business_card.jpeg"], // Use path relative to public directory
+    images: [
+      {
+        url: "/business_card.jpeg",
+        width: 1191,
+        height: 672,
+        alt: "Spencer Hanson — Independent Insurance Broker",
+      },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Spencer Hanson | Independent Life Insurance Broker",
-    description: "Independent life insurance broker working alongside Solace Financial. Serving clients nationwide with personalized coverage and the best rates from top carriers.",
+    description:
+      "Independent life insurance broker licensed in NY, TX, and OH. Compare carriers, get real coverage.",
     images: ["/business_card.jpeg"],
   },
 };
@@ -42,8 +47,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${archivo.variable}`}>
-      <body className="bg-charcoal-950 text-cream-100 antialiased">
+    <html lang="en" className={inter.variable}>
+      <body className="bg-white text-ink-900 antialiased">
         <Navbar />
         {children}
         <Footer />

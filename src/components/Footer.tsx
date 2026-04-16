@@ -2,41 +2,79 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal-950 border-t border-cream-100/10">
-      <div className="max-w-6xl mx-auto px-5 sm:px-6 py-12">
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div className="flex items-center gap-3">
-            <img
-              src="/favicon.png"
-              alt=""
-              className="w-6 h-6 object-cover ring-1 ring-cream-100/10"
-            />
-            <div>
-              <span className="text-cream-100 text-sm font-semibold">Spencer Hanson</span>
-              <p className="text-cream-100/30 text-xs">Independent Life Insurance Broker</p>
+    <footer className="bg-ink-950 text-white border-t border-ink-800">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+          <div className="md:col-span-5">
+            <div className="flex items-center gap-2.5 mb-5">
+              <div className="w-9 h-9 bg-brand-600 rounded-md flex items-center justify-center">
+                <span className="text-white font-bold text-sm tracking-tight">S</span>
+              </div>
+              <div>
+                <span className="text-white font-semibold text-sm block">
+                  Spencer Hanson
+                </span>
+                <span className="text-ink-400 text-[10px] uppercase tracking-[0.15em]">
+                  Independent Insurance Broker
+                </span>
+              </div>
+            </div>
+            <p className="text-ink-400 text-sm leading-relaxed max-w-sm">
+              Working alongside Solace Financial to help clients in New York,
+              Texas, and Ohio find the right coverage.
+            </p>
+          </div>
+
+          <div className="md:col-span-3">
+            <h4 className="text-white font-semibold text-xs uppercase tracking-[0.15em] mb-5">
+              Navigate
+            </h4>
+            <div className="space-y-3">
+              {[
+                { href: "/", label: "Home" },
+                { href: "/about", label: "About" },
+                { href: "/carriers", label: "Carriers" },
+                { href: "/contact", label: "Contact" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="block text-ink-400 hover:text-white transition-colors text-sm"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
 
-          <div className="flex items-center gap-6">
-            <Link href="/about" className="text-cream-100/40 hover:text-tan-400 transition-colors text-xs uppercase tracking-wider">
-              About
-            </Link>
-            <Link href="/carriers" className="text-cream-100/40 hover:text-tan-400 transition-colors text-xs uppercase tracking-wider">
-              Carriers
-            </Link>
-            <Link href="/contact" className="text-cream-100/40 hover:text-tan-400 transition-colors text-xs uppercase tracking-wider">
+          <div className="md:col-span-4">
+            <h4 className="text-white font-semibold text-xs uppercase tracking-[0.15em] mb-5">
               Contact
-            </Link>
+            </h4>
+            <div className="space-y-3">
+              <a
+                href="tel:9144541515"
+                className="block text-ink-400 hover:text-white transition-colors text-sm"
+              >
+                (914) 454-1515
+              </a>
+              <a
+                href="mailto:me@protectedwithspencer.com"
+                className="block text-ink-400 hover:text-white transition-colors text-sm"
+              >
+                me@protectedwithspencer.com
+              </a>
+              <p className="text-ink-500 text-sm">Licensed: NY · TX · OH</p>
+              <p className="text-ink-500 text-xs font-mono">NPN 22179707</p>
+            </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-cream-100/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
-          <p className="text-cream-100/25 text-xs">
+        <div className="pt-6 border-t border-ink-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
+          <p className="text-ink-500 text-xs">
             &copy; {new Date().getFullYear()} Spencer Hanson. All rights reserved.
           </p>
-          <p className="text-cream-100/25 text-xs">
-            (914) 454-1515 · me@protectedwithspencer.com
-          </p>
+          <p className="text-ink-600 text-xs">protectedwithspencer.com</p>
         </div>
       </div>
     </footer>

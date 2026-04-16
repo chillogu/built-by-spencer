@@ -1,35 +1,71 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream-50: #fdfbf5;
-  --color-cream-100: #f5f1e8;
-  --color-cream-200: #ece6d3;
-  --color-charcoal-950: #1a1c1f;
-  --color-charcoal-900: #32373c;
-  --color-charcoal-800: #4a4f54;
-  --color-charcoal-700: #5a6066;
-  --color-charcoal-500: #8a8f95;
-  --color-tan-300: #e0d7bc;
-  --color-tan-400: #d4c8a5;
-  --color-tan-500: #ccc29f;
-  --color-tan-600: #a89a70;
-  --color-tan-700: #817757;
+  /* Accent blue — pulled from business card "Spencer Hanson" lettering */
+  --color-brand-950: #061428;
+  --color-brand-900: #0b2a5b;
+  --color-brand-800: #0f3574;
+  --color-brand-700: #134292;
+  --color-brand-600: #1e56b5;
+  --color-brand-500: #2f6bd1;
+  --color-brand-400: #5f8fe0;
+  --color-brand-300: #92b2ea;
+  --color-brand-200: #c2d3f2;
+  --color-brand-100: #e4ecf9;
+  --color-brand-50: #f3f7fd;
 
-  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-display: var(--font-archivo), var(--font-inter), sans-serif;
+  /* Neutral gray scale */
+  --color-ink-950: #05080f;
+  --color-ink-900: #0f1420;
+  --color-ink-800: #1c2333;
+  --color-ink-700: #2d3648;
+  --color-ink-600: #4b5669;
+  --color-ink-500: #6b7487;
+  --color-ink-400: #8e96a8;
+  --color-ink-300: #c0c6d2;
+  --color-ink-200: #dfe3eb;
+  --color-ink-100: #eef1f6;
+  --color-ink-50: #f7f9fc;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
+
   body {
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    color: var(--color-ink-900);
+    font-feature-settings: "ss01", "cv11";
   }
-  h1, h2, h3, h4, h5, h6 {
+
+  h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.01em;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+  }
+
+  ::selection {
+    background-color: var(--color-brand-900);
+    color: #ffffff;
+  }
+}
+
+@layer utilities {
+  .hairline {
+    border-color: rgba(15, 20, 32, 0.08);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, rgba(11, 42, 91, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(11, 42, 91, 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
   }
 }
