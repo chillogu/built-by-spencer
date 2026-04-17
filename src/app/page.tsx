@@ -214,9 +214,8 @@ export default function Home() {
                     <div className="font-semibold text-ink-900 text-sm">
                       Spencer Hanson
                     </div>
-                    <div className="text-ink-500 text-xs">
-                      (914) 454-1515 · me@protectedwithspencer.com
-                    </div>
+                    <div className="text-ink-500 text-xs">(914) 454-1515</div>
+                    <div className="text-ink-500 text-xs">me@protectedwithspencer.com</div>
                   </div>
                   <Link
                     href="/contact"
