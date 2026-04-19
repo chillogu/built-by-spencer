@@ -35,12 +35,11 @@ export default function Carriers() {
               Partners
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 tracking-tight text-ink-900 leading-[1.05]">
-              Carriers I currently have access to.
+              Carriers I work with.
             </h1>
             <p className="text-ink-600 text-lg leading-relaxed">
-              I partner with financially strong, well-rated carriers to give you
-              real options — not just one company&apos;s product. More carriers
-              are being added in the short future.
+              I partner with financially strong, well-rated carriers so you get
+              real options — not just one company&apos;s product.
             </p>
           </div>
 

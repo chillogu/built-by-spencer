@@ -13,23 +13,22 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-5">
               <p className="text-brand-700 text-xs uppercase tracking-[0.2em] font-semibold mb-4">
-                The problem
+                Why it matters
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 tracking-tight leading-[1.1] text-ink-900">
-                Most people are overpaying — or underprotected.
+                The right coverage at the right price.
               </h2>
               <div className="space-y-4 text-ink-600 leading-relaxed">
                 <p>
-                  People take the first policy they&apos;re quoted, never compare,
-                  and find out too late that their family isn&apos;t covered the
-                  way they thought — or they&apos;re paying twice what they
-                  should.
+                  Most people take the first policy they&apos;re offered without
+                  comparing options. That can mean paying more than you need to —
+                  or having gaps you don&apos;t know about.
                 </p>
                 <p>
                   As an independent broker, I work{" "}
                   <strong className="text-ink-900">for you</strong> — not an
-                  insurance company. I compare top-rated carriers and match you
-                  with coverage that actually fits your situation, your health,
+                  insurance company. I compare top-rated carriers and find
+                  coverage that actually fits your situation, your health,
                   and your budget.
                 </p>
               </div>
@@ -93,7 +92,7 @@ export default function Home() {
               {
                 num: "02",
                 title: "I do the work",
-                body: "I shop top carriers, compare rates, and pull together options that match your goals, health, and budget. You get better choices without lifting a finger.",
+                body: "I shop top-rated carriers, compare rates, and put together options that match your goals, health, and budget. You get better choices without doing any of the legwork.",
               },
               {
                 num: "03",
@@ -130,7 +129,7 @@ export default function Home() {
                 Is this right for you?
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 tracking-tight text-ink-900 leading-[1.1]">
-                This probably sounds like you.
+                A good fit if any of this resonates.
               </h2>
               <div className="space-y-4">
                 {[
@@ -231,8 +230,8 @@ export default function Home() {
       </section>
 
       <CTA
-        title="Stop putting this off."
-        description="One conversation. That's all it takes to figure out where you stand. Free, no obligation, no pressure."
+        title="Ready when you are."
+        description="One conversation is all it takes to see where you stand. Free, no obligation, no pressure."
         buttonText="Talk with Spencer"
       />
     </main>

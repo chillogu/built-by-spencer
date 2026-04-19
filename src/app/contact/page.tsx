@@ -137,8 +137,8 @@ export default function Contact() {
               <div className="space-y-3">
                 {[
                   "Free consultation — no strings attached",
-                  "Personalized quote comparison across top carriers",
-                  "Honest guidance, zero pressure",
+                  "Personalized quote comparison across top-rated carriers",
+                  "Straightforward guidance, zero pressure",
                   "Response within 24 hours",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">

@@ -60,7 +60,7 @@ export default function About() {
                 <p>
                   Whether you need a simple term policy to cover your mortgage
                   or a permanent policy for estate planning, I&apos;ll walk you
-                  through your options without the sales pitch.
+                  through your options in plain language — no sales pitch, no jargon.
                 </p>
               </div>
 
@@ -89,6 +89,8 @@ export default function About() {
                   ))}
                 </div>
               </div>
+
+
             </div>
           </div>
         </div>
