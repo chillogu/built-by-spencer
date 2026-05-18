@@ -62,7 +62,7 @@ export default function ContactForm() {
 
         {status === "success" ? (
           <div className="bg-surface border border-amber/30 rounded-2xl p-8 text-center">
-            <p className="text-white font-semibold text-lg mb-2">Got it — I&apos;ll be in touch.</p>
+            <p className="text-white font-semibold text-lg mb-2">Got it. I&apos;ll be in touch.</p>
             <p className="text-muted text-sm">Usually within a few hours.</p>
           </div>
         ) : (

@@ -51,7 +51,7 @@ export default function PricingSection() {
             </div>
             <p className="text-white font-semibold text-lg mb-2">To get started</p>
             <p className="text-muted text-sm leading-relaxed">
-              A complete website — designed, built, and deployed. You bring the idea; I handle everything else.
+              A complete website, designed, built, and deployed. You bring the idea. I handle everything else.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export default function PricingSection() {
             </div>
             <p className="text-white font-semibold text-lg mb-2">To keep it running</p>
             <p className="text-muted text-sm leading-relaxed">
-              Updates, fixes, and small changes — handled same-day. No retainer contracts, cancel whenever.
+              Updates, fixes, and small changes, handled same-day. No retainer contracts, cancel whenever.
             </p>
           </div>
         </div>

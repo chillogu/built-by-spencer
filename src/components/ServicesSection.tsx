@@ -10,7 +10,7 @@ const SERVICES = [
   {
     title: "Full Websites",
     description:
-      "A complete site designed and built from scratch — on your domain, deployed, and ready on day one. No templates, no shortcuts.",
+      "A complete site, designed and built from scratch. On your domain, deployed, and ready on day one. No templates, no shortcuts.",
     icon: "◻",
   },
   {
@@ -22,7 +22,7 @@ const SERVICES = [
   {
     title: "Monthly Care",
     description:
-      "I keep your site running. Copy updates, small fixes, new sections — handled the same day you ask. $20 a month, no contracts.",
+      "I keep your site running. Copy updates, small fixes, new sections, handled the same day you ask. $20 a month, no contracts.",
     icon: "◎",
   },
 ];

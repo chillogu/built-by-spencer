@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
+import AboutSection from "@/components/AboutSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import PricingSection from "@/components/PricingSection";
 import ContactForm from "@/components/ContactForm";
@@ -10,6 +11,7 @@ export default function Home() {
     <main className="bg-bg">
       <HeroSection />
       <ServicesSection />
+      <AboutSection />
       <PortfolioSection />
       <PricingSection />
       <ContactForm />
