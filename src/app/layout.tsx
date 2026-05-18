@@ -1,57 +1,51 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+  weight: ["500", "700"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://protectedwithspencer.com"),
-  title: "Spencer Hanson | Independent Life Insurance Broker",
-  description:
-    "Independent life insurance broker licensed in New York, Texas, and Ohio. I compare top carriers and match you with the right coverage — no pressure, no runaround.",
+  title: "Built by Spencer — Web Design",
+  description: "Custom websites and landing pages. Starting at $175.",
   openGraph: {
-    title: "Spencer Hanson | Independent Life Insurance Broker",
-    description:
-      "Independent life insurance broker licensed in New York, Texas, and Ohio. Compare top carriers and get the right coverage.",
+    title: "Built by Spencer — Web Design",
+    description: "Custom websites and landing pages. Starting at $175.",
     url: "https://protectedwithspencer.com",
-    siteName: "Protected With Spencer",
-    images: [
-      {
-        url: "/business_card.jpeg",
-        width: 1191,
-        height: 672,
-        alt: "Spencer Hanson — Independent Insurance Broker",
-      },
-    ],
+    siteName: "Built by Spencer",
+    images: [{ url: "/business_card.jpeg", width: 1191, height: 672, alt: "Built by Spencer" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Spencer Hanson | Independent Life Insurance Broker",
-    description:
-      "Independent life insurance broker licensed in NY, TX, and OH. Compare carriers, get real coverage.",
+    title: "Built by Spencer — Web Design",
+    description: "Custom websites and landing pages. Starting at $175.",
     images: ["/business_card.jpeg"],
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="bg-white text-ink-900 antialiased">
-        <Navbar />
-        {children}
-        <Footer />
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <body className="bg-bg text-white antialiased">
+        <SmoothScroll>
+          <Navbar />
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );
