@@ -1,71 +1,57 @@
 @import "tailwindcss";
 
 @theme {
-  /* Accent blue — pulled from business card "Spencer Hanson" lettering */
-  --color-brand-950: #061428;
-  --color-brand-900: #0b2a5b;
-  --color-brand-800: #0f3574;
-  --color-brand-700: #134292;
-  --color-brand-600: #1e56b5;
-  --color-brand-500: #2f6bd1;
-  --color-brand-400: #5f8fe0;
-  --color-brand-300: #92b2ea;
-  --color-brand-200: #c2d3f2;
-  --color-brand-100: #e4ecf9;
-  --color-brand-50: #f3f7fd;
+  --color-bg:      #080808;
+  --color-surface: #111111;
+  --color-border:  #1f1f1f;
+  --color-amber:   #F59E0B;
+  --color-orange:  #F97316;
+  --color-white:   #ffffff;
+  --color-muted:   #71717a;
+  --color-dim:     #3f3f46;
 
-  /* Neutral gray scale */
-  --color-ink-950: #05080f;
-  --color-ink-900: #0f1420;
-  --color-ink-800: #1c2333;
-  --color-ink-700: #2d3648;
-  --color-ink-600: #4b5669;
-  --color-ink-500: #6b7487;
-  --color-ink-400: #8e96a8;
-  --color-ink-300: #c0c6d2;
-  --color-ink-200: #dfe3eb;
-  --color-ink-100: #eef1f6;
-  --color-ink-50: #f7f9fc;
-
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-display: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans:    "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
 
   body {
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #ffffff;
-    color: var(--color-ink-900);
-    font-feature-settings: "ss01", "cv11";
+    background-color: #080808;
+    color: #ffffff;
   }
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.025em;
-    font-weight: 600;
+    letter-spacing: -0.03em;
+    font-weight: 700;
   }
 
   ::selection {
-    background-color: var(--color-brand-900);
-    color: #ffffff;
+    background-color: #F59E0B;
+    color: #080808;
   }
 }
 
 @layer utilities {
-  .hairline {
-    border-color: rgba(15, 20, 32, 0.08);
+  .gradient-amber {
+    background: linear-gradient(135deg, #F59E0B, #F97316);
   }
 
-  .grid-bg {
-    background-image:
-      linear-gradient(to right, rgba(11, 42, 91, 0.04) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(11, 42, 91, 0.04) 1px, transparent 1px);
-    background-size: 56px 56px;
+  .text-gradient-amber {
+    background: linear-gradient(135deg, #F59E0B, #F97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-amber {
+    box-shadow: 0 0 60px 20px rgba(245, 158, 11, 0.08);
   }
 }
