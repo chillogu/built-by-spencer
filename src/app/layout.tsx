@@ -19,22 +19,20 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://protectedwithspencer.com"),
+  metadataBase: new URL("https://built-by-spencer.vercel.app"),
   title: "Built by Spencer — Web Design",
-  description: "Custom websites and landing pages. Starting at $175.",
+  description: "Custom websites and landing pages for small businesses. Starting at $175.",
   openGraph: {
     title: "Built by Spencer — Web Design",
-    description: "Custom websites and landing pages. Starting at $175.",
-    url: "https://protectedwithspencer.com",
+    description: "Custom websites and landing pages for small businesses. Starting at $175.",
+    url: "https://built-by-spencer.vercel.app",
     siteName: "Built by Spencer",
-    images: [{ url: "/business_card.jpeg", width: 1191, height: 672, alt: "Built by Spencer" }],
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Built by Spencer — Web Design",
-    description: "Custom websites and landing pages. Starting at $175.",
-    images: ["/business_card.jpeg"],
+    description: "Custom websites and landing pages for small businesses. Starting at $175.",
   },
 };
 
